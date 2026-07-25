@@ -23,5 +23,9 @@ def proration():
 
     return jsonify({"charge": charge})
 
+@app.route("/")
+def home():
+    return "Proration API is running!"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
